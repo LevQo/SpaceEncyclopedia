@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.levqo.spaceencyclopedia.TestActivity">
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/back_button"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/correct_answer"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="centerCrop" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/back_button"
+        android:layout_marginBottom="100dp"
+        android:layout_marginTop="17dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/question1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/back"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text=""
+                android:textColor="@color/cardview_light_background"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/q1_rg"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/question1"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/q1_answer1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/radio_button_style"
+                    android:buttonTint="@color/cardview_light_background"
+                    android:padding="7dp"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="30dp" />
+
+                <RadioButton
+                    android:id="@+id/q1_answer2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/radio_button_style"
+                    android:buttonTint="@color/cardview_light_background"
+                    android:padding="7dp"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="30dp" />
+
+                <RadioButton
+                    android:id="@+id/q1_answer3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/radio_button_style"
+                    android:buttonTint="@color/cardview_light_background"
+                    android:padding="7dp"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="30dp" />
+
+                <RadioButton
+                    android:id="@+id/q1_answer4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/radio_button_style"
+                    android:buttonTint="@color/cardview_light_background"
+                    android:padding="7dp"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="30dp" />
+            </RadioGroup>
+
+
+            <TextView
+                android:id="@+id/question2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/question1"
+                android:layout_below="@+id/q1_rg"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/back"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text=""
+                android:textColor="@color/cardview_light_background"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/q2_rg"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/question2"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:visibility="invisible">
+
+                <RadioButton
+                    android:id="@+id/q2_answer1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/radio_button_style"
+                    android:buttonTint="@color/cardview_light_background"
+                    android:padding="7dp"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="30dp" />
+
+                <RadioButton
+                    android:id="@+id/q2_answer2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/radio_button_style"
+                    android:buttonTint="@color/cardview_light_background"
+                    android:padding="7dp"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="30dp" />
+
+                <RadioButton
+                    android:id="@+id/q2_answer3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/radio_button_style"
+                    android:buttonTint="@color/cardview_light_background"
+                    android:padding="7dp"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="30dp" />
+
+                <RadioButton
+                    android:id="@+id/q2_answer4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/radio_button_style"
+                    android:buttonTint="@color/cardview_light_background"
+                    android:padding="7dp"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="30dp" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/question3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/question2"
+                android:layout_below="@+id/q2_rg"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/back"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text=""
+                android:textColor="@color/cardview_light_background"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+
+
+            <RadioGroup
+                android:id="@+id/q3_rg"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/question3"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:visibility="invisible">
+
+                <RadioButton
+                    android:id="@+id/q3_answer1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/radio_button_style"
+                    android:buttonTint="@color/cardview_light_background"
+                    android:padding="7dp"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="30dp" />
+
+                <RadioButton
+                    android:id="@+id/q3_answer2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/radio_button_style"
+                    android:buttonTint="@color/cardview_light_background"
+                    android:padding="7dp"
+                    android:textSize="30dp"
+                    android:textColor="@color/cardview_light_background" />
+
+                <RadioButton
+                    android:id="@+id/q3_answer3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/radio_button_style"
+                    android:buttonTint="@color/cardview_light_background"
+                    android:padding="7dp"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="30dp" />
+
+                <RadioButton
+                    android:id="@+id/q3_answer4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/radio_button_style"
+                    android:buttonTint="@color/cardview_light_background"
+                    android:padding="7dp"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="30dp" />
+            </RadioGroup>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/buttonDone"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="#1260CB"
+        android:text="Ответить"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

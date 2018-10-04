@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "574500100075",
+    "firebase_url": "https://spaceencyclopidia.firebaseio.com",
+    "project_id": "spaceencyclopidia",
+    "storage_bucket": "spaceencyclopidia.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:574500100075:android:e72b741112c071a4",
+        "android_client_info": {
+          "package_name": "com.levqo.spaceencyclopedia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "574500100075-86b2ubb2dlqtad9rr5jn24e3u9s41ged.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnuRml4c8xZyN-24hkE4dJKBCPMEchwz8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
